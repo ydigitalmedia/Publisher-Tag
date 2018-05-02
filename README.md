@@ -1,6 +1,4 @@
 
-
-
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
@@ -41,9 +39,9 @@ You will see `<ins` at the beginning of the tag, and the tag will contain `class
 This simple sample tag includes three attributes: one for the placement (`data-yd-placement`), one for a custom key-value pairs in JSON formar (`data-yd-parameters`), and one for creative format (`data-yd-format`).
 ```
 <ins class="ydads" style="display:inline-block"
-    data-yd-placement="cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv."
-    data-yd-format="interstitial"
-    data-yd-parameters="{src:\"ydigital\"}">
+    data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv.'
+    data-yd-format='interstitial'
+    data-yd-parameters='{src:"ydigital"}'>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ydigitalmedia/publisher-tag@4.0.0/yd-publisher.js"></script>
 </ins>
 ```
@@ -81,7 +79,7 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-click-tracker='https://cliks.ydigitalmedia.com'
     data-yd-lp='https://www.ydigitalmedia.com'
     data-yd-parameters='{src:"ydigital"}'
-    data-yd-format='interstitial'
+    data-yd-format='interstitial'>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ydigitalmedia/publisher-tag@4.0.0/yd-publisher.js"></script>
 </ins>
 ```
