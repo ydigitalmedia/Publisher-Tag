@@ -36,7 +36,7 @@ The publisher tag is a way to easily distribute YDigital Media state of the art 
 
 #### Sample tag
 You will see `<ins` at the beginning of the tag, and the tag will contain `class='ydads'`.
-This simple sample tag includes three attributes: one for the placement (`data-yd-placement`), one for a custom key-value pairs in JSON formar (`data-yd-parameters`), and one for creative format (`data-yd-format`).
+This simple sample tag includes three attributes: one for the placement (`data-yd-placement`), one for a custom key-value pairs in JSON format (`data-yd-parameters`), and one for creative format (`data-yd-format`).
 ```
 <ins class="ydads" style="display:inline"
     data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv.'
@@ -58,15 +58,15 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 
 #### Table of data attributes
 
-|HTML attribute               |Purpose                        |
-|-----------------------------|-------------------------------|
-|`data-yd-placement`          |YDigital Media placement ID, this parameter should not be changed by any means|
-|`data-yd-impression-id`      |This is the publisher impression ID. In case you do not set this value, the tag will automatically generate an impression ID.|
-|`data-yd-impression-tracker` |Third party impression tracker URL. If this is not a valid URL it will be ignored.|
-|`data-yd-click-tracker`      |Third party click tracker URL. If this is not a valid URL it will be ignored.|
-|`data-yd-parameters`         |List of custom parameters to add to your LP or click tracker URL on call time.|
-|`data-yd-lp`                 |Landing page URL. If this is not a valid URL it will be ignored.|
-|`data-yd-format`             |Can be one of the following values: `interstitial` (default) or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you|
+|HTML attribute               |Purpose                                                                                                                                                                                                                        |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|`data-yd-placement`          |YDigital Media placement ID, this parameter should not be changed by any means                                                                                                                                                 |
+|`data-yd-impression-id`      |This is the publisher impression ID. In case you do not set this value, the tag will automatically generate an impression ID.                                                                                                  |
+|`data-yd-impression-tracker` |Third party impression tracker URL. If this is not a valid URL it will be ignored.                                                                                                                                             |
+|`data-yd-click-tracker`      |Third party click tracker URL. If this is not a valid URL it will be ignored.                                                                                                                                                  |
+|`data-yd-parameters`         |A JSON string containing a list of custom parameters to add to the creative URL. The parameters will also be added to the LP URL (if provided) and to both impression and click trackers of YDigital Media (in case they exist)|
+|`data-yd-lp`                 |Landing page URL. If this is not a valid URL it will be ignored.                                                                                                                                                               |
+|`data-yd-format`             |Can be one of the following values: `interstitial` (default) or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you                                                            |
 
 
 
