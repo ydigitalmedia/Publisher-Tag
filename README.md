@@ -61,12 +61,18 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 |HTML attribute               |Purpose                                                                                                                                                                                                                        |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |`data-yd-placement`          |YDigital Media placement ID, this parameter should not be changed by any means                                                                                                                                                 |
+|`data-yd-tc`                 |Campaign tracking code (only supply this if you're using the tag to serve an internal YD campaign)                                                                                                                             |
 |`data-yd-impression-id`      |This is the publisher impression ID. In case you do not set this value, the tag will automatically generate an impression ID.                                                                                                  |
 |`data-yd-impression-tracker` |Third party impression tracker URL. If this is not a valid URL it will be ignored.                                                                                                                                             |
 |`data-yd-click-tracker`      |Third party click tracker URL. If this is not a valid URL it will be ignored.                                                                                                                                                  |
 |`data-yd-parameters`         |A JSON string containing a list of custom parameters to add to the creative URL. The parameters will also be added to the LP URL (if provided) and to both impression and click trackers of YDigital Media (in case they exist)|
 |`data-yd-lp`                 |Landing page URL. If this is not a valid URL it will be ignored.                                                                                                                                                               |
-|`data-yd-format`             |Can be one of the following values: `interstitial` (default) or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you                                                            |
+|`data-yd-format`             |Can be one of the following values: `interstitial` (default) or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you.                                                           |
+|`data-yd-closebtn`           |A boolean value representing whether the creative should show a close button or not. Usually this is done by the DSP and the default value is false. Don't change unless you know what you're doing.                           |
+|`data-yd-closebtn-timeout`   |An integer representing the time in seconds to show the close button. The default is 0 and in case this is > 0 will activate the close button automatically.                                                                   |
+|`data-yd-close-timeout`      |An integer representing the time in seconds to close the creative. The default is 0 (no timeout).                                                                                                                              |
+|`data-yd-hide-timeout-layer` |A boolean value representing whether the timeout counter should be displayed or not. The default is to show the layer.                                                                                                         |
+|`data-yd-frame-background`   |Interstitial frame background color. The default is transparent.                                                                                                                                                               |
 
 
 
@@ -79,7 +85,12 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-click-tracker='https://cliks.ydigitalmedia.com'
     data-yd-lp='https://www.ydigitalmedia.com'
     data-yd-parameters='{"src":"ydigital"}'
-    data-yd-format='interstitial'>
+    data-yd-format='interstitial'
+    data-yd-closebtn='false'
+    data-yd-closebtn-timeout='0'
+    data-yd-close-timeout='0'
+    data-yd-hide-timeout-layer='false'
+    data-yd-frame-background='transparent'>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ydigitalmedia/publisher-tag@4/yd-publisher.js"></script>
 </ins>
 ```
