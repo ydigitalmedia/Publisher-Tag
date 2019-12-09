@@ -42,7 +42,7 @@ This simple sample tag includes three attributes: one for the placement (`data-y
     data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv.'
     data-yd-format='interstitial'
     data-yd-parameters='{"src":"ydigital"}'>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ydigitalmedia/publisher-tag@4/yd-publisher.js"></script>
+    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@4/yd-publisher.js"></script>
 </ins>
 ```
 
@@ -94,7 +94,7 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-hide-timeout-layer='false'
     data-yd-audit='false'
     data-yd-publisher='{pub_id}'>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/ydigitalmedia/publisher-tag@4/yd-publisher.js"></script>
+    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@4/yd-publisher.js"></script>
 </ins>
 ```
 
