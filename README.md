@@ -71,9 +71,10 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 |`data-yd-closebtn`           |Tell the tag to show the close button, only use if the tag is serving directly in the publisher. Default is false.                                                                                                              |
 |`data-yd-closebtn-timeout`   |Timeout, in seconds, before showing close button. The default is 0                                                                                                                                                              |
 |`data-yd-close-timeout`      |Timeout, in seconds, before the creative is closed. The default is 0 (values <= 0 will be ignored)                                                                                                                              |
-|`data-yd-hide-timeout-layer` |If true, it will hide the close timeout layer. The default is false. Note that this only applies if the close timeout is grated than 0                                                                                        |
-|`data-yd-audit`              |a boolean telling whether to include YDigital Media third party auditor pixel. The default is true, just set it to false to disable the auditor pixel                                                                     |
-|`data-yd-publisher`          |Publisher ID                                                                                                                                                                                                                    |
+|`data-yd-freeze-on-interaction` |If there is an interaction, timeout, before the creative is closed will be disabled. The default is true
+|`data-yd-hide-timeout-layer`    |If true, it will hide the close timeout layer. The default is false. Note that this only applies if the close timeout is grated than 0                                                                                        |
+|`data-yd-audit`                 |a boolean telling whether to include YDigital Media third party auditor pixel. The default is true, just set it to false to disable the auditor pixel                                                                     |
+|`data-yd-publisher`             |Publisher ID                                                                                                                                                                                                                    |
 
 
 
@@ -91,6 +92,7 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-closebtn='true'
     data-yd-closebtn-timeout='1'
     data-yd-close-timeout='20'
+    data-yd-freeze-on-interaction='true'
     data-yd-hide-timeout-layer='false'
     data-yd-audit='false'
     data-yd-publisher='{pub_id}'>
