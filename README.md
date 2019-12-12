@@ -66,9 +66,11 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 |`data-yd-click-tracker`      |Third party click tracker URL. If this is not a valid URL it will be ignored                                                                                                                                                    |
 |`data-yd-parameters`         |A JSON string containing a list of custom parameters to add to the creative URL. The parameters will also be added to the LP URL (if provided) and to both impression and click trackers of YDigital Media (in case they exist)|
 |`data-yd-lp`                 |Landing page URL. If this is not a valid URL it will be ignored                                                                                                                                                                 |
-|`data-yd-format`             |Can be one of the following values: `interstitial` (default) or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you                                                             |
+|`data-yd-format`             |Can be one of the following values: `interstitial` (default), `ticker` or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you                                                             |
+|`data-yd-ticker-height`      |Set ticker height (only valid if `data-yd-format` is `ticker`). Default is `250px` |
 |`data-yd-frameBackground`    |Frame background, can be any color (in hexadecimal representation). Default value is transparent                                                                                                                                |
 |`data-yd-closebtn`           |Tell the tag to show the close button, only use if the tag is serving directly in the publisher. Default is false.                                                                                                              |
+|`data-yd-closebtn-position`  |Position of the closed button. Default is `top+10px right+10px`|
 |`data-yd-closebtn-timeout`   |Timeout, in seconds, before showing close button. The default is 0                                                                                                                                                              |
 |`data-yd-close-timeout`      |Timeout, in seconds, before the creative is closed. The default is 0 (values <= 0 will be ignored)                                                                                                                              |
 |`data-yd-freeze-on-interaction` |If there is an interaction, timeout, before the creative is closed will be disabled. The default is true
@@ -88,8 +90,10 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-lp='https://www.ydigitalmedia.com'
     data-yd-parameters='{"src":"ydigital"}'
     data-yd-format='interstitial'
+    data-yd-ticker-height='250px'
     data-yd-frameBackground='transparent'
-    data-yd-closebtn='true'
+    data-yd-closebtn='false'
+    data-yd-closebtn-position='top+10px right+10px'
     data-yd-closebtn-timeout='1'
     data-yd-close-timeout='20'
     data-yd-freeze-on-interaction='true'
