@@ -39,10 +39,10 @@ You will see `<ins` at the beginning of the tag, and the tag will contain `class
 This simple sample tag includes three attributes: one for the placement (`data-yd-placement`), one for a custom key-value pairs in JSON format (`data-yd-parameters`), and one for creative format (`data-yd-format`).
 ```
 <ins class="ydads" style="display:inline"
-    data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv.'
+    data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtdA==.aHR0cHM6Ly92aWJyb2NpbC55ZGlnaXRhbG1lZGlhLmNvbS9zY3JlZW5jbGVhbmVyLw==.Mjk5OS0xMi0zMQ==.'
     data-yd-format='interstitial'
     data-yd-parameters='{"src":"ydigital"}'>
-    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@4/yd-publisher.js"></script>
+    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@5/yd-publisher.js"></script>
 </ins>
 ```
 
@@ -68,7 +68,7 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 |`data-yd-lp`                 |Landing page URL. If this is not a valid URL it will be ignored                                                                                                                                                                 |
 |`data-yd-format`             |Can be one of the following values: `interstitial` (default), `ticker` or `banner`. Usually you don't need to set or change this parameter, YDigital Media may set it for you                                                             |
 |`data-yd-ticker-height`      |Set ticker height (only valid if `data-yd-format` is `ticker`). Default is `250px` |
-|`data-yd-frameBackground`    |Frame background, can be any color (in hexadecimal representation). Default value is transparent                                                                                                                                |
+|`data-yd-frame-background`   |Frame background, can be any color (in hexadecimal representation). Default value is transparent                                                                                                                                |
 |`data-yd-closebtn`           |Tell the tag to show the close button, only use if the tag is serving directly in the publisher. Default is false.                                                                                                              |
 |`data-yd-closebtn-position`  |Position of the closed button. Default is `top+10px right+10px`|
 |`data-yd-closebtn-timeout`   |Timeout, in seconds, before showing close button. The default is 0                                                                                                                                                              |
@@ -83,15 +83,15 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
 #### Full tag example
 ```
 <ins class="ydads" style="display:inline"
-    data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtVA==.aHR0cHM6Ly9jb3JhbC55ZGlnaXRhbG1lZGlhLmNvbS9jb3Jkb2FubzIwMTgv.'
+    data-yd-placement='cHQtMC1mYWN0b3J5dGVzdC0wLTAtdA==.aHR0cHM6Ly92aWJyb2NpbC55ZGlnaXRhbG1lZGlhLmNvbS9zY3JlZW5jbGVhbmVyLw==.Mjk5OS0xMi0zMQ==.'
     data-yd-impression-id='{ord}'
     data-yd-impression-tracker='https://impression.ydigitalmedia.com'
-    data-yd-click-tracker='https://cliks.ydigitalmedia.com'
+    data-yd-click-tracker='https://clicks.ydigitalmedia.com'
     data-yd-lp='https://www.ydigitalmedia.com'
     data-yd-parameters='{"src":"ydigital"}'
     data-yd-format='interstitial'
     data-yd-ticker-height='250px'
-    data-yd-frameBackground='transparent'
+    data-yd-frame-background='transparent'
     data-yd-closebtn='false'
     data-yd-closebtn-position='top+10px right+10px'
     data-yd-closebtn-timeout='1'
@@ -100,7 +100,7 @@ If you want to use ad parameters in the tag, enter them as HTML attributes in th
     data-yd-hide-timeout-layer='false'
     data-yd-audit='false'
     data-yd-publisher='{pub_id}'>
-    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@4/yd-publisher.js"></script>
+    <script type="text/javascript" src="//pkg.ydigitalmedia.com/publisher-tag@5/yd-publisher.js"></script>
 </ins>
 ```
 
